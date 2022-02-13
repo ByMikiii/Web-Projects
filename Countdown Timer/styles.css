@@ -1,0 +1,51 @@
+body {
+  background-image: url("background.jpg");
+}
+body h1 {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 64px;
+  position: relative;
+  top: 220px;
+}
+.timer {
+  position: relative;
+  right: 620px;
+  text-align: center;
+  top: 100px;
+}
+
+.timer_days {
+  font-size: 48px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: relative;
+  top: 150px;
+  left: 400px;
+}
+.timer_hours {
+  font-size: 48px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: relative;
+  top: -54px;
+  left: 550px;
+}
+.timer_minutes {
+  font-size: 48px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: relative;
+  top: -258px;
+  left: 700px;
+}
+.timer_seconds {
+  font-size: 48px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: relative;
+  top: -462px;
+  left: 850px;
+}
+span {
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+  bottom: 60px;
+}
