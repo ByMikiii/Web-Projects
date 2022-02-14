@@ -14,9 +14,11 @@ function countDown() {
 
   if (hourPos < 10) {
     hourPos = "0" + hourPos;
-  } else if (minPos < 10) {
+  }
+  if (minPos < 10) {
     minPos = "0" + minPos;
-  } else if (secPos < 10) {
+  }
+  if (secPos < 10) {
     secPos = "0" + secPos;
   }
 
@@ -29,4 +31,4 @@ function countDown() {
     document.getElementById("days").innerHTML = "Merry Christmas";
   }
 }
-setInterval(countDown, 1000);
+setInterval(countDown, 100);
