@@ -1,5 +1,8 @@
 body {
   background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 body h1 {
   text-align: center;
