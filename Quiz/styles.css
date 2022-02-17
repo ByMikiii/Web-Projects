@@ -7,21 +7,43 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 h1 {
   text-align: center;
-  color: antiquewhite;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  color: white;
   font-size: 54px;
+  margin-top: 5px;
+  font-weight: bold;
 }
 .center {
-  background-color: antiquewhite;
-  height: 400px;
-  width: 350px;
+  background-color: white;
+  margin: 125px auto;
+  height: 370px;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 20px;
+  border: 2px solid black;
 }
-body .center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.center .question {
+  position: relative;
+  top: 2%;
+  font-size: 20px;
+  margin: 25px 15px 45px 15px;
+  font-weight: bold;
+}
+.answer {
+  margin: 15px 50px;
+  border: none;
+  background-color: rgba(211, 211, 211, 0.363);
+  font-size: 16px;
+  width: 300px;
+  height: 25px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.answer:active,
+.answer:hover {
+  background-color: rgba(158, 158, 158, 0.397);
 }
