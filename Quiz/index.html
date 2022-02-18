@@ -10,7 +10,7 @@
     <h1>Quiz</h1>
 
     <div class="center">
-      <div class="question">Question</div>
+      <div id="question" class="question">Question</div>
 
       <div class="answer">
         <button id="answer4" class="btn">Answer1</button>
@@ -34,15 +34,19 @@
 
       <div class="score">
         <p>SCORE:</p>
-        <div class="score-number">cislo</div>
+        <p id="score-number">cislo</p>
       </div>
 
       <div class="btn-ord">
-        <button class="next-quest">Next Question</button>
+        <button class="next-quest" onclick="nextQuestion()">
+          Next Question
+        </button>
       </div>
 
       <div class="btn-ord">
-        <button class="prev-quest">Previous question</button>
+        <button class="prev-quest" onclick="previousQuestion()">
+          Previous question
+        </button>
       </div>
     </div>
     <script src="quiz-script.js"></script>
