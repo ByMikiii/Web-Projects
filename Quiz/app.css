@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+h1 {
+  text-align: center;
+  color: rgb(187, 132, 29);
+  font-size: 54px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+.center {
+  background-color: rgba(24, 24, 24, 0.664);
+  margin: 125px auto;
+  height: 440px;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 20px;
+  border: 2px solid rgb(187, 132, 29);
+}
+.center .question {
+  position: relative;
+  top: 2%;
+  font-size: 20px;
+  margin: 25px 15px 45px 15px;
+  font-weight: bold;
+  color: rgb(187, 132, 29);
+}
+.btn {
+  margin: 15px 50px;
+  border: none;
+  background-color: rgba(211, 211, 211, 0.363);
+  font-size: 16px;
+  width: 300px;
+  height: 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+}
+.btn:active,
+.btn:hover {
+  background-color: rgba(158, 158, 158, 0.397);
+}
+.answer-status {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: green;
+}
+.score {
+  margin-top: 50px;
+  margin-left: 150px;
+  color: white;
+  width: 100px;
+  position: relative;
+  bottom: 15px;
+}
+.next-quest,
+.prev-quest {
+  border: none;
+  background-color: rgba(211, 211, 211, 0.363);
+  font-size: 16px;
+  width: 90px;
+  height: 50px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+}
+.next-quest:active,
+.next-quest:hover,
+.prev-quest:active,
+.prev-quest:hover {
+  background-color: rgba(158, 158, 158, 0.397);
+}
+.next-quest {
+  margin-left: 240px;
+  position: relative;
+  bottom: 55px;
+}
+.prev-quest {
+  margin-right: 240px;
+  position: relative;
+  bottom: 105px;
+}
+.score-number {
+  color: rgb(187, 132, 29);
+  font-weight: bold;
+}
