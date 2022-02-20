@@ -52,17 +52,8 @@ h1 {
 .btn:hover {
   background-color: rgba(158, 158, 158, 0.397);
 }
-.answer-correct {
-  margin-top: 20px;
-  margin-bottom: 10px;
+.answer-status {
   font-weight: bold;
-  color: green;
-}
-.answer-incorrect {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  color: red;
 }
 .score {
   margin-top: 50px;

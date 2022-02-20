@@ -1,6 +1,8 @@
-const question = document.querySelector(".question");
-const score = document.querySelector("#score-number");
+const correct = "Správna odpoveď!";
+const incorrect = "Nesprávna odpoveď!";
+
 var questionNumber = 1;
+var score = 0;
 let questions = [
   {
     ques: "1. Ktorá krajina má celkovo najviac medailí zo zimných olympijských hier?",
@@ -84,9 +86,56 @@ let questions = [
   },
 ];
 
-checkQuesNumber();
+var selectedAnswer = "";
+
+function answer1() {
+  if (selectedAnswer === "") {
+    selectedAnswer = "answer1";
+    checkAnswer();
+  }
+}
+
+function answer2() {
+  if (selectedAnswer === "") {
+    selectedAnswer = "answer2";
+    checkAnswer();
+  }
+}
+
+function answer3() {
+  if (selectedAnswer === "") {
+    selectedAnswer = "answer3";
+    checkAnswer();
+  }
+}
+
+function answer4() {
+  if (selectedAnswer === "") {
+    selectedAnswer = "answer4";
+    checkAnswer();
+  }
+}
+
+function checkAnswer() {
+  if (selectedAnswer === questions[questionNumber - 1].correct) {
+    document.getElementById(selectedAnswer).style.color = "green";
+    score++;
+    document.getElementById("score-number").innerHTML = score + " / 10";
+
+    document.getElementById("answer-status").style.color = "green";
+    document.getElementById("answer-status").innerHTML = correct;
+  } else {
+    document.getElementById(selectedAnswer).style.color = "red";
+    document.getElementById(questions[questionNumber - 1].correct).style.color =
+      "green";
+
+    document.getElementById("answer-status").style.color = "red";
+    document.getElementById("answer-status").innerHTML = incorrect;
+  }
+}
 
 function checkQuesNumber() {
+  document.getElementById("score-number").innerHTML = score + " / 10";
   document.getElementById("question").innerHTML =
     questions[questionNumber - 1].ques;
   document.getElementById("answer1").innerHTML =
@@ -102,14 +151,28 @@ function checkQuesNumber() {
 //BUTTONS
 function nextQuestion() {
   if (questionNumber < 10) {
-    questionNumber++;
-    checkQuesNumber();
+    if (selectedAnswer === "") {
+      alert("Please, answer the question.");
+    }
+    if (selectedAnswer !== "") {
+      document.getElementById(selectedAnswer).style.color = "white";
+      document.getElementById(
+        questions[questionNumber - 1].correct
+      ).style.color = "white";
+      document.getElementById("answer-status").innerHTML = "";
+      selectedAnswer = "";
+
+      questionNumber++;
+      checkQuesNumber();
+    }
   }
 }
 
-function previousQuestion() {
-  if (questionNumber > 1) {
-    questionNumber--;
-    checkQuesNumber();
-  }
-}
+// function previousQuestion() {
+//   if (questionNumber > 1) {
+//     questionNumber--;
+//     checkQuesNumber();
+//   }
+// }
+
+checkQuesNumber();
