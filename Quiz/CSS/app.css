@@ -3,10 +3,10 @@
   padding: 0;
 }
 body {
-  background-image: url("background.jpg");
+  background-image: url("/Quiz/Images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 99.5vh;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
@@ -20,7 +20,7 @@ h1 {
 .center {
   background-color: rgba(24, 24, 24, 0.664);
   margin: 125px auto;
-  height: 440px;
+  height: 460px;
   max-width: 400px;
   text-align: center;
   border-radius: 20px;
@@ -44,6 +44,7 @@ h1 {
   border-radius: 8px;
   font-weight: bold;
   color: white;
+  border: 0.1px solid rgb(187, 132, 29);
 }
 .answer {
   position: sticky;
@@ -63,8 +64,7 @@ h1 {
   position: relative;
   bottom: 15px;
 }
-.next-quest,
-.prev-quest {
+.next-quest {
   border: none;
   background-color: rgba(211, 211, 211, 0.363);
   font-size: 16px;
@@ -75,20 +75,14 @@ h1 {
   color: white;
 }
 .next-quest:active,
-.next-quest:hover,
-.prev-quest:active,
-.prev-quest:hover {
+.next-quest:hover {
   background-color: rgba(158, 158, 158, 0.397);
 }
 .next-quest {
   margin-left: 240px;
   position: relative;
   bottom: 55px;
-}
-.prev-quest {
-  margin-right: 240px;
-  position: relative;
-  bottom: 105px;
+  border: 0.1px solid rgb(187, 132, 29);
 }
 .score-number {
   color: rgb(187, 132, 29);

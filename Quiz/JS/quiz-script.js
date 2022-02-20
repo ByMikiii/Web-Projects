@@ -1,5 +1,6 @@
 const correct = "Správna odpoveď!";
 const incorrect = "Nesprávna odpoveď!";
+const defaulButtonBg = "rgba(211, 211, 211, 0.363)";
 
 var questionNumber = 1;
 var score = 0;
@@ -118,16 +119,17 @@ function answer4() {
 
 function checkAnswer() {
   if (selectedAnswer === questions[questionNumber - 1].correct) {
-    document.getElementById(selectedAnswer).style.color = "green";
+    document.getElementById(selectedAnswer).style.background = "green";
     score++;
     document.getElementById("score-number").innerHTML = score + " / 10";
 
     document.getElementById("answer-status").style.color = "green";
     document.getElementById("answer-status").innerHTML = correct;
   } else {
-    document.getElementById(selectedAnswer).style.color = "red";
-    document.getElementById(questions[questionNumber - 1].correct).style.color =
-      "green";
+    document.getElementById(selectedAnswer).style.background = "red";
+    document.getElementById(
+      questions[questionNumber - 1].correct
+    ).style.background = "green";
 
     document.getElementById("answer-status").style.color = "red";
     document.getElementById("answer-status").innerHTML = incorrect;
@@ -155,10 +157,10 @@ function nextQuestion() {
       alert("Please, answer the question.");
     }
     if (selectedAnswer !== "") {
-      document.getElementById(selectedAnswer).style.color = "white";
+      document.getElementById(selectedAnswer).style.background = defaulButtonBg;
       document.getElementById(
         questions[questionNumber - 1].correct
-      ).style.color = "white";
+      ).style.background = defaulButtonBg;
       document.getElementById("answer-status").innerHTML = "";
       selectedAnswer = "";
 
