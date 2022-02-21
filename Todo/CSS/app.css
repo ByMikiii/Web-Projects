@@ -1,5 +1,5 @@
 body {
-  background-image: url("/Todo/Images/background.png");
+  background-image: url("/Todo/Images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 99.5vh;
@@ -21,14 +21,9 @@ h1 {
   border: 1px solid rgb(156, 55, 30);
   border-radius: 8px;
   margin-top: 15%;
+  margin-left: 100px;
   display: inline-block;
 }
-#left {
-  display: inline-block;
-  margin-left: 16%;
-  margin-right: 25px;
-}
-
 .btn {
   margin-left: 20px;
   margin-top: 15px;
