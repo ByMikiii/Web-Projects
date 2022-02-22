@@ -67,10 +67,7 @@ h1 {
   left: 90px;
   bottom: 38px;
 }
-.editicon:hover,
-.editicon:active {
-  background-color: green;
-}
+
 /* .todo-list2,
 #mid,
 #right {
