@@ -12,33 +12,34 @@ body h1 {
   top: 18rem;
   right: 58rem;
 }
-.timer {
-  text-align: center;
+#timer {
+  background-color: black;
+  width: 200px;
+  display: flex;
 }
 
-.timer_days {
+.timer .timer_days {
   font-size: 48px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   position: absolute;
   top: 28rem;
   right: 80rem;
-  margin: auto;
 }
-.timer_hours {
+.timer .timer_hours {
   font-size: 48px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   position: absolute;
   top: 28rem;
   right: 70rem;
 }
-.timer_minutes {
+.timer .timer_minutes {
   font-size: 48px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   position: absolute;
   top: 28rem;
   right: 60rem;
 }
-.timer_seconds {
+.timer .timer_seconds {
   font-size: 48px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   position: absolute;
