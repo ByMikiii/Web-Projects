@@ -64,12 +64,32 @@ h1 {
   opacity: 8%;
 }
 .editicon:hover,
-.editicon:active {
+.editicon:active,
+.plusicon:hover,
+.plusicon:active,
+.minusicon:hover,
+.minusicon:active {
   opacity: 50%;
 }
 .editt {
   position: relative;
   left: 90px;
+  bottom: 38px;
+}
+.plusicon,
+.minusicon {
+  height: 2rem;
+  position: absolute;
+  opacity: 8%;
+}
+#plus {
+  position: relative;
+  right: 75px;
+  bottom: 38px;
+}
+#minus {
+  position: relative;
+  right: 110px;
   bottom: 38px;
 }
 
