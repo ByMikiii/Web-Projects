@@ -48,24 +48,6 @@ h1 {
 .btn:hover {
   background-color: rgb(230, 229, 229);
 }
-.editicon {
-  height: 2rem;
-  position: absolute;
-  opacity: 8%;
-}
-.editicon:hover,
-.editicon:active,
-.plusicon:hover,
-.plusicon:active,
-.minusicon:hover,
-.minusicon:active {
-  opacity: 50%;
-}
-.editt {
-  position: relative;
-  left: 90px;
-  bottom: 38px;
-}
 .plusicon,
 .minusicon {
   height: 2rem;
@@ -98,9 +80,30 @@ h1 {
   border-bottom: black 3px solid;
   background-color: rgba(206, 130, 30, 0.664);
 }
+#plus-minus {
+  position: relative;
+  bottom: 175px;
+  background-color: rgba(102, 102, 102, 0);
+  border: none;
+}
 
-/* .todo-list2,
+.plus-list,
+.minus-list {
+  opacity: 65%;
+  position: relative;
+  top: 100px;
+  display: inline-block;
+}
+
+.plus-list:active,
+.plus-list:hover,
+.minus-list:active,
+.minus-list:hover {
+  opacity: 85%;
+}
+
+.todo-list2,
 #mid,
 #right {
   display: none;
-} */
+}
