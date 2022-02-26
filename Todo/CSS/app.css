@@ -54,6 +54,12 @@ h1 {
   position: absolute;
   opacity: 20%;
 }
+.plusicon:active,
+.plusicon:hover,
+.minusicon:active,
+.minusicon:hover {
+  opacity: 65%;
+}
 #plus {
   position: relative;
   left: 90px;
@@ -89,17 +95,18 @@ h1 {
 
 .plus-list,
 .minus-list {
-  opacity: 65%;
+  opacity: 40%;
   position: relative;
   top: 100px;
   display: inline-block;
+  filter: invert(1);
 }
 
 .plus-list:active,
 .plus-list:hover,
 .minus-list:active,
 .minus-list:hover {
-  opacity: 85%;
+  opacity: 80%;
 }
 
 .todo-list2,
