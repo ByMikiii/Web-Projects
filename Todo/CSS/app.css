@@ -48,17 +48,6 @@ h1 {
 .btn:hover {
   background-color: rgb(230, 229, 229);
 }
-.todo-list p,
-.todo-list2 p {
-  font-size: 24px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  border-bottom: black 3px solid;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 9px;
-  background-color: rgb(255, 246, 216);
-  font-weight: bold;
-}
 .editicon {
   height: 2rem;
   position: absolute;
@@ -81,22 +70,35 @@ h1 {
 .minusicon {
   height: 2rem;
   position: absolute;
-  opacity: 8%;
+  opacity: 20%;
 }
 #plus {
   position: relative;
-  right: 75px;
-  bottom: 38px;
+  left: 90px;
+  bottom: 35px;
 }
 #minus {
   position: relative;
-  right: 110px;
-  bottom: 38px;
+  right: 115px;
+  bottom: 35px;
 }
-.heading-input,
-.heading-submit {
-  position: absolute;
+.list-name {
+  position: relative;
+  top: 0px;
+  border: none;
+  height: 24px;
+  width: 250px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 9px;
+  border-bottom: black 3px solid;
+  background-color: rgba(206, 130, 30, 0.664);
 }
+
 /* .todo-list2,
 #mid,
 #right {

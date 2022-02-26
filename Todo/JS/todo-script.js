@@ -38,9 +38,9 @@ function getVisibility(list, task) {
   return getVisibility;
 }
 
-var i = 1;
+// var i = 1;
 
-while  {
-  var x = document.getElementById("heading1").value;
-  console.log(x);
-}
+// // while  {
+// //   var x = document.getElementById("heading1").value;
+// //   console.log(x);
+// //}
