@@ -14,8 +14,8 @@ function pushButton(button) {
 
 function minusTask(list) {
   for (i = 7; i > 0; i--) {
-    if (getDisplay(list, i) == "block") {
-      document.getElementById("button" + list + i).style.display = "none";
+    if (getVisibility(list, i) == "visible") {
+      document.getElementById("button" + list + i).style.visibility = "hidden";
       i = 0;
     }
   }
@@ -23,16 +23,16 @@ function minusTask(list) {
 
 function plusTask(list) {
   for (i = 1; i <= 7; i++) {
-    if (getDisplay(list, i) == "none") {
-      document.getElementById("button" + list + i).style.display = "block";
+    if (getVisibility(list, i) == "hidden") {
+      document.getElementById("button" + list + i).style.visibility = "visible";
       i = 8;
     }
   }
 }
 
-function getDisplay(list, task) {
+function getVisibility(list, task) {
   let btnSel = document.querySelector("#button" + list + task);
   let compStyles = window.getComputedStyle(btnSel);
-  let getDisplay = compStyles.getPropertyValue("display");
-  return getDisplay;
+  let getVisibility = compStyles.getPropertyValue("visibility");
+  return getVisibility;
 }
