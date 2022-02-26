@@ -25,6 +25,7 @@ function plusTask(list) {
   for (i = 1; i <= 7; i++) {
     if (getVisibility(list, i) == "hidden") {
       document.getElementById("button" + list + i).style.visibility = "visible";
+      document.getElementById("btn" + list + i).style.textDecoration = "none";
       i = 8;
     }
   }
@@ -35,4 +36,11 @@ function getVisibility(list, task) {
   let compStyles = window.getComputedStyle(btnSel);
   let getVisibility = compStyles.getPropertyValue("visibility");
   return getVisibility;
+}
+
+var i = 1;
+
+while  {
+  var x = document.getElementById("heading1").value;
+  console.log(x);
 }
