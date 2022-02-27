@@ -1,30 +1,27 @@
-function pushButton(button) {
-  let btn = "#btn" + button;
-  let btnSel = document.querySelector(btn);
-  let compStyles = window.getComputedStyle(btnSel);
-  let textDec = compStyles.getPropertyValue("text-Decoration");
+function pushtask(task) {
+  let cb = document.querySelector("#chtask" + task);
 
-  if (textDec == "rgb(0, 0, 0)") {
-    document.getElementById("btn" + button).style.textDecoration =
+  if (cb.checked == true) {
+    document.getElementById("taski" + task).style.textDecoration =
       "line-through 2px";
-  } else if (textDec == "line-through 2px rgb(0, 0, 0)") {
-    document.getElementById("btn" + button).style.textDecoration = "none";
+  } else {
+    document.getElementById("taski" + task).style.textDecoration = "none";
   }
 }
 
 function minusTask(list) {
-  for (i = 7; i > 0; i--) {
+  for (i = 6; i > 0; i--) {
     if (getVisibility(list, i) == "visible") {
-      document.getElementById("button" + list + i).style.visibility = "hidden";
+      document.getElementById("task" + list + i).style.visibility = "hidden";
       i = 0;
     }
   }
 }
 
 function plusTask(list) {
-  for (i = 1; i <= 7; i++) {
+  for (i = 1; i <= 6; i++) {
     if (getVisibility(list, i) == "hidden") {
-      document.getElementById("button" + list + i).style.visibility = "visible";
+      document.getElementById("task" + list + i).style.visibility = "visible";
       document.getElementById("btn" + list + i).style.textDecoration = "none";
       i = 8;
     }
@@ -32,15 +29,35 @@ function plusTask(list) {
 }
 
 function getVisibility(list, task) {
-  let btnSel = document.querySelector("#button" + list + task);
+  let btnSel = document.querySelector("#task" + list + task);
   let compStyles = window.getComputedStyle(btnSel);
   let getVisibility = compStyles.getPropertyValue("visibility");
   return getVisibility;
 }
 
-// var i = 1;
+function plusList() {
+  for (i = 1; i < 7; i++) {
+    let btnSel = document.querySelector("#todo-list" + i);
+    let compStyles = window.getComputedStyle(btnSel);
+    let getDisplay = compStyles.getPropertyValue("display");
 
-// // while  {
-// //   var x = document.getElementById("heading1").value;
-// //   console.log(x);
-// //}
+    if (getDisplay == "none") {
+      document.getElementById("todo-list" + i).style.display = "inline-block";
+      i = 7;
+    }
+  }
+}
+
+function minusList() {
+  for (i = 6; i > 0; i--) {
+    let btnSel = document.querySelector("#todo-list" + i);
+    let compStyles = window.getComputedStyle(btnSel);
+    let getDisplay = compStyles.getPropertyValue("display");
+    console.log(getDisplay);
+
+    if (getDisplay == "inline-block") {
+      document.getElementById("todo-list" + i).style.display = "none";
+      i = 0;
+    }
+  }
+}

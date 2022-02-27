@@ -1,6 +1,6 @@
 const correct = "Správna odpoveď!";
 const incorrect = "Nesprávna odpoveď!";
-const defaulButtonBg = "rgba(211, 211, 211, 0.363)";
+const defaultaskBg = "rgba(211, 211, 211, 0.363)";
 
 var questionNumber = 1;
 var score = 0;
@@ -62,7 +62,7 @@ let questions = [
     correct: "answer3",
   },
   {
-    ques: "8. Keď je vonku 80 fahrenheitov (°F), koľko to pre nás znamená stupňov celzia (°C)?",
+    ques: "8. Keď je vonku 80 fahrenheitov (°F), koľko to pre nás zclassná stupňov celzia (°C)?",
     ans1: "12.5 °C",
     ans2: "26.6 °C",
     ans3: "32.8 °C",
@@ -150,17 +150,17 @@ function checkQuesNumber() {
     questions[questionNumber - 1].ans4;
 }
 
-//BUTTONS
+//taskS
 function nextQuestion() {
   if (questionNumber < 10) {
     if (selectedAnswer === "") {
       alert("Please, answer the question.");
     }
     if (selectedAnswer !== "") {
-      document.getElementById(selectedAnswer).style.background = defaulButtonBg;
+      document.getElementById(selectedAnswer).style.background = defaultaskBg;
       document.getElementById(
         questions[questionNumber - 1].correct
-      ).style.background = defaulButtonBg;
+      ).style.background = defaultaskBg;
       document.getElementById("answer-status").innerHTML = "";
       selectedAnswer = "";
 
