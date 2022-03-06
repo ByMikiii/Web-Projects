@@ -2,9 +2,9 @@
 <html>
   <head>
     <title>Quiz ByMikiii</title>
-    <link rel="stylesheet" href="/Quiz/CSS/app.css" />
+    <link rel="stylesheet" href="./CSS/app.css" />
     <meta class="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/Quiz/Images/iconka.png" type="icon" />
+    <link rel="icon" href="./Images/iconka.png" type="icon" />
   </head>
   <body>
     <h1>Quiz</h1>
@@ -13,19 +13,19 @@
       <div id="question" class="question">Question</div>
 
       <div class="answer">
-        <task id="answer1" class="btn" onclick="answer1()">Answer1</task>
+        <task id="answer1" class="btn" onclick="answer(1)">Answer1</task>
       </div>
 
       <div class="answer">
-        <task id="answer2" class="btn" onclick="answer2()">Answer2</task>
+        <task id="answer2" class="btn" onclick="answer(2)">Answer2</task>
       </div>
 
       <div class="answer">
-        <task id="answer3" class="btn" onclick="answer3()">Answer3</task>
+        <task id="answer3" class="btn" onclick="answer(3)">Answer3</task>
       </div>
 
       <div class="answer">
-        <task id="answer4" class="btn" onclick="answer4()">Answer4</task>
+        <task id="answer4" class="btn" onclick="answer(4)">Answer4</task>
       </div>
 
       <div class="answer-status" id="answer-status"></div>
@@ -38,13 +38,7 @@
       <div class="btn-ord">
         <task class="next-quest" onclick="nextQuestion()"> Ďalšia Otázka </task>
       </div>
-
-      <!-- <div class="btn-ord">
-        <task class="prev-quest" onclick="previousQuestion()">
-          Previous question
-        </task>
-      </div> -->
     </div>
-    <script src="/Quiz/JS/quiz-script.js"></script>
+    <script src="./JS/quiz-script.js"></script>
   </body>
 </html>

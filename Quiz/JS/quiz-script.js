@@ -89,30 +89,9 @@ let questions = [
 
 var selectedAnswer = "";
 
-function answer1() {
+function answer(answerNumber) {
   if (selectedAnswer === "") {
-    selectedAnswer = "answer1";
-    checkAnswer();
-  }
-}
-
-function answer2() {
-  if (selectedAnswer === "") {
-    selectedAnswer = "answer2";
-    checkAnswer();
-  }
-}
-
-function answer3() {
-  if (selectedAnswer === "") {
-    selectedAnswer = "answer3";
-    checkAnswer();
-  }
-}
-
-function answer4() {
-  if (selectedAnswer === "") {
-    selectedAnswer = "answer4";
+    selectedAnswer = "answer" + answerNumber;
     checkAnswer();
   }
 }
@@ -169,12 +148,4 @@ function nextQuestion() {
     }
   }
 }
-
-// function previousQuestion() {
-//   if (questionNumber > 1) {
-//     questionNumber--;
-//     checkQuesNumber();
-//   }
-// }
-
 checkQuesNumber();

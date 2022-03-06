@@ -3,7 +3,7 @@ body {
 }
 /* From cssbuttons.io by @nikk7007 */
 .btn {
-  --color: #861e8a;
+  --color: red;
   padding: 0.8em 1.7em;
   background-color: transparent;
   border-radius: 0.3em;
@@ -58,10 +58,26 @@ body {
   filter: brightness(0.8);
 }
 .center {
-  display: block flex;
-  margin-left: 47%;
-  margin-top: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -75%);
+  width: 500px;
+  height: 100px;
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 .result {
-  color: #861e8a;
+  position: absolute;
+  bottom: 650%;
+  left: -150px;
+  font-size: 124px;
+}
+.center .inside {
+  position: absolute;
+  bottom: 5%;
 }
