@@ -56,7 +56,8 @@ h1 {
   top: -1px;
 }
 .plusicon,
-.minusicon {
+.minusicon,
+.eraseicon {
   height: 2rem;
   position: absolute;
   opacity: 20%;
@@ -65,7 +66,9 @@ h1 {
 .plusicon:active,
 .plusicon:hover,
 .minusicon:active,
-.minusicon:hover {
+.minusicon:hover,
+.eraseicon:active,
+.eraseicon:hover {
   opacity: 65%;
 }
 #plus {
@@ -77,6 +80,11 @@ h1 {
   position: relative;
   right: 115px;
   bottom: 35px;
+}
+#erase {
+  position: relative;
+  bottom: 35px;
+  left: -4%;
 }
 .list-class {
   position: relative;
@@ -98,7 +106,7 @@ h1 {
   filter: invert(1);
   position: relative;
   bottom: -30px;
-  left: 45.5%;
+  left: 43.5%;
   width: 150px;
 }
 .plus-list,
@@ -120,4 +128,15 @@ h1 {
 #todo-list3,
 #todo-list2 {
   display: none;
+}
+.tasks {
+  visibility: hidden;
+}
+#task11,
+#task21,
+#task31,
+#task41,
+#task51,
+#task61 {
+  visibility: visible;
 }

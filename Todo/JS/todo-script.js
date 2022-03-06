@@ -43,6 +43,9 @@ function plusList() {
 
     if (getDisplay == "none") {
       document.getElementById("todo-list" + i).style.display = "inline-block";
+      for (j = 2; j <= 6; j++) {
+        document.getElementById("task" + i + j).style.visibility = "hidden";
+      }
       i = 7;
     }
   }
@@ -59,5 +62,14 @@ function minusList() {
       document.getElementById("todo-list" + i).style.display = "none";
       i = 0;
     }
+  }
+}
+
+function erase(list) {
+  document.getElementById("heading" + list).value = "";
+  for (i = 1; i <= 6; i++) {
+    document.getElementById("taski" + list + i).value = "";
+    document.getElementById("chtask" + list + i).checked = false;
+    document.getElementById("taski" + list + i).style.textDecoration = "none";
   }
 }
