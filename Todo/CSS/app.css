@@ -1,5 +1,5 @@
 body {
-  background-image: url("/Todo/Images/background.jpg");
+  background-image: url("../Images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 1060px;
