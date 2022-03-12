@@ -3,6 +3,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 94vh;
+  position: relative;
 }
 body h1 {
   text-align: center;
@@ -54,4 +55,11 @@ span {
 }
 p {
   text-align: center;
+}
+footer {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: rgb(252, 252, 252);
+  background-color: rgba(0, 0, 0, 0.288);
 }
